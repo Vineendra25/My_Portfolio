@@ -1,0 +1,46 @@
+/* Fade In Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Glow Pulse */
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px var(--neon-blue);
+  }
+  50% {
+    box-shadow: 0 0 25px var(--neon-purple);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--neon-blue);
+  }
+}
+
+.project-card:hover {
+  animation: glowPulse 1.5s infinite;
+}
+
+/* Floating Effect */
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.skill-card:hover {
+  animation: float 2s infinite;
+}
